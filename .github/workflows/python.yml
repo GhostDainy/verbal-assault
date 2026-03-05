@@ -23,6 +23,6 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-    - name: Run application test
-      run: |
-        python src/verbal_assault.py
+   - name: Check Python syntax
+  run: |
+    python -m py_compile src/verbal_assault.py

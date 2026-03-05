@@ -24,3 +24,5 @@ python src/verbal_assault.py
 ## Description
 
 This CLI program randomly selects phrases from a dataset and prints them to the console.
+
+## CI enabled

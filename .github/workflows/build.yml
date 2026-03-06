@@ -40,3 +40,12 @@ jobs:
       with:
         name: verbal-assault-${{ runner.os }}
         path: dist/*
+
+    - name: Create Release
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v2
+      with:
+        files: |
+          dist/*
+
+
